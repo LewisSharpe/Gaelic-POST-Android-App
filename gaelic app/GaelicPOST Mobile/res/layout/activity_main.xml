@@ -1,0 +1,165 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context=".MainActivity" >
+
+    <Button
+        android:id="@+id/btnHLSS"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/btnBusSchool"
+        android:background="#707070"
+        android:text="Documentation"
+        android:textColor="#FFFFFF" />
+
+    <Button
+        android:id="@+id/btnBusSchool"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/btnECCI"
+        android:background="#C0C0C0"
+        android:text="Demos"
+        android:textColor="#FFFFFF" />
+
+    <Button
+        android:id="@+id/btnSupport"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/btnHLSS"
+        android:background="#C0C0C0"
+        android:text="Associated Partners"
+        android:textColor="#FFFFFF" />
+
+    <ImageView
+        android:id="@+id/ednapier"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/ednapier" />
+
+    <ImageView
+        android:id="@+id/twitter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:src="@drawable/twitter" />
+
+    <ImageView
+        android:id="@+id/facebook"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:src="@drawable/facebook" />
+
+    <TextView
+        android:id="@+id/tvDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="23dp"
+        android:text="Date" />
+
+    <Button
+        android:id="@+id/btnContactUs"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/btnSupport"
+        android:background="#707070"
+        android:text="Contact us"
+        android:textColor="#FFFFFF" />
+
+    <Button
+        android:id="@+id/btnRateApp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/btnContactUs"
+        android:background="#CC0033"
+        android:text="Rate App"
+        android:textColor="#FFFFFF" />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/ednapier"
+        android:background="#005daa"
+        android:gravity="center"
+        android:text="School of Computing"
+        android:textColor="#FFFFFF"
+        android:textSize="34dp" />
+
+    <TextView
+        android:id="@+id/TextView01"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/textView1"
+        android:background="#005daa"
+        android:gravity="center"
+        android:text="Gaelic POST API Service"
+        android:textColor="#FFFFFF"
+        android:textSize="30dp" />
+
+    <Button
+        android:id="@+id/btnECCI"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/btnAboutUs"
+        android:layout_marginTop="42dp"
+        android:background="#707070"
+        android:text="How it works"
+        android:textColor="#FFFFFF" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/TextView01"
+        android:text="This mobile application was designed and created to help present and showcase how the to external researchers on how our Gaelic POST API could be integrated into apps for research purposes. If you want to use our API for research purposes, contact Alistair Lawson- a.lawson@napier.ac.uk ." />
+
+    <Button
+        android:id="@+id/btnAboutUs"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/textView2"
+        android:layout_marginTop="21dp"
+        android:background="#707070"
+        android:text="Gaelic POST API"
+        android:textColor="#FFFFFF" />
+
+    <Button
+        android:id="@+id/btnGPOS"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/btnAboutUs"
+        android:background="#C0C0C0"
+        android:text="Gaelic POST Tagger"
+        android:textColor="#FFFFFF" />
+
+</RelativeLayout>

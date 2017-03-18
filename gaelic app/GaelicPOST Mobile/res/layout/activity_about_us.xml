@@ -1,0 +1,40 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context=".AboutUs" >
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/ednapier" />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/imageView1"
+        android:background="#707070"
+        android:gravity="center"
+        android:text="GAELIC POS"
+        android:textColor="#FFFFFF"
+        android:textSize="24sp" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/textView1"
+        android:layout_marginTop="23dp"
+        android:text="GPOST-API is a Gaelic Part-of-Speech Tagger API and was developed by Edinburgh Napier University in collaboration with University of Edinburgh. This project is led by Alistair Lawson, with software development by Simon Garrelou, Paul Lapook, Aga Kitkowska and Lewis Sharp, and in conjunction with William Lamb and Sammy Danso at the University of Edinburgh. GPOST-API uses The Gaelic Part-of-Speech Tagger Project and makes its methods available through a REST API.  The Gaelic Part-of-Speech Tagger Project was lead by William Lamb (Celtic and Scottish Studies) at the University of Edinburgh and funded by Carnegie Trust and Bòrd na Gàidhlig, and with Collaborators from a number of Scottish Universities. To try the service right now, you can use the Demo page."
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textSize="20sp" />
+
+</RelativeLayout>

@@ -1,0 +1,85 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context=".Soci" >
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/ednapier" />
+
+    <ImageView
+        android:id="@+id/ImageView01"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/ace_logo"
+        android:textColor="#005daa" />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/ImageView01"
+        android:background="#005daa"
+        android:gravity="center"
+        android:text="School of Creative Industries"
+        android:textColor="#FFFFFF"
+        android:textSize="24dp" />
+
+    <TextView
+        android:id="@+id/TextView05"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/TextView01"
+        android:text="●	the opportunities for students to enter programmes at both entry and advanced level, dependent on your qualifications."
+        android:textColor="#005daa" />
+
+    <TextView
+        android:id="@+id/TextView04"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/TextView05"
+        android:text="●	formal and informal articulation arrangements with a range of Scottish colleges which allow for students to enter our programmes with advanced standing. "
+        android:textColor="#005daa" />
+
+    <TextView
+        android:id="@+id/TextView03"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/TextView04"
+        android:text="●	a range of programmes which are specifically designed to allow students to enter directly into year three"
+        android:textColor="#005daa" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/textView1"
+        android:text="The School of Arts &amp; Creative Industries at Edinburgh Napier University is one of the premier centres for creative arts education in Scotland. Our undergraduate and postgraduate courses have been designed in consultation with leading business and industry figures. In the Guardian University League Tables 2015, Edinburgh Napier University ranked as the top Scottish Modern University for studying Journalism, Publishing and Public Relations, Media and Film Studies, Music and Design &amp; Crafts."
+        android:textColor="#005daa" />
+
+    <TextView
+        android:id="@+id/TextView01"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/textView2"
+        android:layout_marginTop="15dp"
+        android:text="What do we offer for Associate Students?"
+        android:textColor="#005daa"
+        android:textStyle="bold" />
+
+</RelativeLayout>

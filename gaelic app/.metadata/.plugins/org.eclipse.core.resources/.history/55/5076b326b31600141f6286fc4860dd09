@@ -1,0 +1,75 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context=".HLSS" >
+
+    <Button
+        android:id="@+id/btnSocialSciences"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/btnHLSciences"
+        android:background="#4fad26"
+        android:text="School of Nursing, Midwifery and Social Care"
+        android:textColor="#FFFFFF" />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/ImageView01"
+        android:text="School of Health, Life and Social Sciences"
+        android:textSize="25dp" 
+        android:background="#4fad26"
+        android:textColor="#FFFFFF"
+        android:gravity="center"/>
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/ednapier" />
+
+    <ImageView
+        android:id="@+id/ImageView01"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/ace_logo" />
+
+    <Button
+        android:id="@+id/btnHLSciences"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/textView2"
+        android:background="#4fad26"
+        android:text=" School of Life, Sport &amp; Social Sciences "
+        android:textColor="#FFFFFF" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/imageView2"
+        android:text="Our state-of-the-art campus is home to the Faculty of Health, Life &amp; Social Sciences at our Sighthill Campus. It provides a modern, purpose-built, sustainable building with premier learning and teaching facilties including 22 seminar rooms, 25 specialised teaching rooms, nine clinical skills laboratories, also the ENGAGE Sports Centre and the multi-level Learning Resource Centre"
+        android:textColor="#4fad26" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/textView1"
+        android:src="@drawable/sighthill" />
+
+</RelativeLayout>

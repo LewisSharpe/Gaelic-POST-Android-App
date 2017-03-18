@@ -1,0 +1,143 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context=".CCampusPictureGallery" >
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/ednapier" />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/imageView3"
+        android:background="#CCCCCC"
+        android:gravity="center"
+        android:text="Craiglockhart Campus Picture Gallery"
+        android:textColor="#FFFFFF"
+        android:textSize="24dp" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/ace_logo" />
+
+    <Button
+        android:id="@+id/btnC2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/btnC1"
+        android:layout_alignBottom="@+id/btnC1"
+        android:layout_alignLeft="@+id/imageView1"
+        android:layout_marginLeft="12dp"
+        android:background="#CCCCCC"
+        android:text="2"
+        android:textColor="#FFFFFF" />
+
+    <Button
+        android:id="@+id/btnC3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/btnC2"
+        android:layout_alignBottom="@+id/btnC2"
+        android:layout_alignRight="@+id/imageView1"
+        android:layout_marginRight="21dp"
+        android:background="#CCCCCC"
+        android:text="3"
+        android:textColor="#FFFFFF" />
+
+    <Button
+        android:id="@+id/btnC4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/btnC3"
+        android:layout_alignBottom="@+id/btnC3"
+        android:layout_toRightOf="@+id/btnC3"
+        android:background="#CCCCCC"
+        android:text="4"
+        android:textColor="#FFFFFF" />
+
+    <Button
+        android:id="@+id/btnC6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/btnC5"
+        android:layout_alignBottom="@+id/btnC5"
+        android:layout_alignLeft="@+id/btnC2"
+        android:background="#CCCCCC"
+        android:text="6"
+        android:textColor="#FFFFFF" />
+
+    <Button
+        android:id="@+id/btnC7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/btnC6"
+        android:layout_alignBottom="@+id/btnC6"
+        android:layout_alignLeft="@+id/btnC3"
+        android:background="#CCCCCC"
+        android:text="7"
+        android:textColor="#FFFFFF" />
+
+    <Button
+        android:id="@+id/btnC8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/btnC7"
+        android:layout_alignBottom="@+id/btnC7"
+        android:layout_toRightOf="@+id/imageView1"
+        android:background="#CCCCCC"
+        android:text="8"
+        android:textColor="#FFFFFF" />
+
+    <Button
+        android:id="@+id/btnC5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/imageView1"
+        android:layout_alignParentLeft="true"
+        android:background="#CCCCCC"
+        android:text="5"
+        android:textColor="#FFFFFF" />
+
+    <Button
+        android:id="@+id/btnC1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/btnC5"
+        android:layout_alignParentLeft="true"
+        android:background="#CCCCCC"
+        android:text="1"
+        android:textColor="#FFFFFF" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/btnC2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="10dp"
+        android:text="Craiglockhart Campus"
+        android:textColor="#CCCCCC" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:src="@drawable/craiglockhart4" />
+
+</RelativeLayout>

@@ -1,0 +1,145 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context=".SCampusPictureGallery" >
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/ace_logo" />
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/ednapier" />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/imageView3"
+        android:background="#4fad26"
+        android:gravity="center"
+        android:text="Sighthill Campus Picture Gallery"
+        android:textColor="#FFFFFF"
+        android:textSize="25dp" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="37dp"
+        android:src="@drawable/sighthill5" />
+
+    <Button
+        android:id="@+id/btnS2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/btnS1"
+        android:layout_alignBottom="@+id/btnS1"
+        android:layout_alignLeft="@+id/imageView1"
+        android:layout_marginLeft="26dp"
+        android:background="#4fad26"
+        android:text="2"
+        android:textColor="#FFFFFF" />
+
+    <Button
+        android:id="@+id/btnS3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/btnS2"
+        android:layout_alignBottom="@+id/btnS2"
+        android:layout_alignRight="@+id/imageView1"
+        android:layout_marginRight="13dp"
+        android:background="#4fad26"
+        android:text="3"
+        android:textColor="#FFFFFF" />
+
+    <Button
+        android:id="@+id/btnS4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/btnS3"
+        android:layout_alignBottom="@+id/btnS3"
+        android:layout_toRightOf="@+id/imageView3"
+        android:background="#4fad26"
+        android:text="4"
+        android:textColor="#FFFFFF" />
+
+    <Button
+        android:id="@+id/btnS1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imageView2"
+        android:layout_marginTop="34dp"
+        android:layout_toLeftOf="@+id/imageView3"
+        android:background="#4fad26"
+        android:text="1"
+        android:textColor="#FFFFFF" />
+
+    <Button
+        android:id="@+id/btnS5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btnS1"
+        android:layout_marginTop="18dp"
+        android:layout_toLeftOf="@+id/imageView3"
+        android:background="#4fad26"
+        android:text="5"
+        android:textColor="#FFFFFF" />
+
+    <Button
+        android:id="@+id/btnS6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/btnS5"
+        android:layout_alignBottom="@+id/btnS5"
+        android:layout_alignLeft="@+id/btnS2"
+        android:background="#4fad26"
+        android:text="6"
+        android:textColor="#FFFFFF" />
+
+    <Button
+        android:id="@+id/btnS7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/btnS6"
+        android:layout_alignBottom="@+id/btnS6"
+        android:layout_alignLeft="@+id/btnS3"
+        android:background="#4fad26"
+        android:text="7"
+        android:textColor="#FFFFFF" />
+
+    <Button
+        android:id="@+id/btnS8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/btnS7"
+        android:layout_alignBottom="@+id/btnS7"
+        android:layout_alignLeft="@+id/btnS4"
+        android:background="#4fad26"
+        android:text="8"
+        android:textColor="#FFFFFF" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imageView2"
+        android:layout_centerHorizontal="true"
+        android:text="Sighthill Campus Science Lab"
+        android:textColor="#4fad26" />
+
+</RelativeLayout>

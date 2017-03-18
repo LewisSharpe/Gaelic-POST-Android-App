@@ -1,0 +1,233 @@
+package com.example.acenapiermobile;
+
+import android.os.Bundle;
+import android.app.Activity;
+import android.content.Intent;
+import android.view.Menu;
+import android.view.View;
+import android.view.View.OnClickListener;
+import android.widget.Button;
+import android.widget.RadioButton;
+import android.widget.RadioGroup;
+import android.widget.TextView;
+import android.widget.Toast;
+
+public class SubjectFinder extends Activity implements OnClickListener {
+	private RadioGroup rgroup1;
+	private RadioButton radio0;
+	private RadioButton radio1;
+	private RadioButton radio2;
+	
+	private RadioGroup rgroup2;
+	private RadioButton radio3;
+	private RadioButton radio4;
+	private RadioButton radio5;
+	
+	private RadioGroup rgroup3;
+	private RadioButton radio6;
+	private RadioButton radio7;
+	private RadioButton radio8;
+	@Override
+	protected void onCreate(Bundle savedInstanceState) {
+		super.onCreate(savedInstanceState);
+		setContentView(R.layout.activity_subject_finder);
+		
+		
+		rgroup1 = (RadioGroup) findViewById (R.id.rgroup1);
+		radio0 = (RadioButton) findViewById (R.id.radio0);
+		radio1 = (RadioButton) findViewById (R.id.radio1);
+		radio2 = (RadioButton) findViewById (R.id.radio2);
+	radio0.setOnClickListener(this);
+	radio1.setOnClickListener(this);
+	radio2.setOnClickListener(this);
+	
+	rgroup2 = (RadioGroup) findViewById (R.id.rgroup2);
+	radio3 = (RadioButton) findViewById (R.id.radio3);
+	radio4 = (RadioButton) findViewById (R.id.radio4);
+	radio5 = (RadioButton) findViewById (R.id.radio5);
+radio3.setOnClickListener(this);
+radio4.setOnClickListener(this);
+radio5.setOnClickListener(this);
+
+
+rgroup3 = (RadioGroup) findViewById (R.id.rgroup3);
+radio6 = (RadioButton) findViewById (R.id.radio6);
+radio7 = (RadioButton) findViewById (R.id.radio7);
+radio8 = (RadioButton) findViewById (R.id.radio8);
+radio6.setOnClickListener(this);
+radio7.setOnClickListener(this);
+radio8.setOnClickListener(this);
+	}
+
+	@Override
+	public boolean onCreateOptionsMenu(Menu menu) {
+		// Inflate the menu; this adds items to the action bar if it is present.
+		getMenuInflater().inflate(R.menu.activity_subject_finder, menu);
+		return true;
+	}
+
+	@Override
+	public void onClick(View v) {
+		int checkedRadioButtonId = rgroup1.getCheckedRadioButtonId();
+		int checkedRadioButtonId1 = rgroup2.getCheckedRadioButtonId();
+		int checkedRadioButtonId2 = rgroup3.getCheckedRadioButtonId();
+		
+		switch (checkedRadioButtonId) {
+		case R.id.radio0:
+			if (radio0.isChecked() && radio3.isChecked() && radio8.isChecked()){
+				TextView textView3 = (TextView) findViewById(R.id.textView3);
+				textView3.setText("Have you ever considered Biology or Chemistry?");
+				}
+			if (radio0.isChecked() && radio3.isChecked() && radio6.isChecked()){
+				TextView textView3 = (TextView) findViewById(R.id.textView3);
+				textView3.setText("Have you ever considered Medicine or Law?");
+				}	
+			if (radio0.isChecked() && radio3.isChecked() && radio7.isChecked()){
+					TextView textView3 = (TextView) findViewById(R.id.textView3);
+					textView3.setText("Have you ever considered Biomedical Science?");
+					}
+			if (radio0.isChecked() && radio4.isChecked() && radio6.isChecked()){
+				TextView textView3 = (TextView) findViewById(R.id.textView3);
+				textView3.setText("Have you ever considered Physics or Mechincal Engineering?");
+				}
+			if (radio0.isChecked() && radio4.isChecked() && radio7.isChecked()){
+				TextView textView3 = (TextView) findViewById(R.id.textView3);
+				textView3.setText("Have you ever considered Biology or Physics?");
+				}
+			if (radio0.isChecked() && radio4.isChecked() && radio8.isChecked()){
+				TextView textView3 = (TextView) findViewById(R.id.textView3);
+				textView3.setText("Have you ever considered Music?");
+				}
+			if (radio0.isChecked() && radio5.isChecked() && radio6.isChecked()){
+				TextView textView3 = (TextView) findViewById(R.id.textView3);
+				textView3.setText("Have you ever considered Nursing?");
+				}
+			if (radio0.isChecked() && radio5.isChecked() && radio7.isChecked()){
+				TextView textView3 = (TextView) findViewById(R.id.textView3);
+				textView3.setText("Have you ever considered Mathematics or Engineering?");
+				}
+			if (radio0.isChecked() && radio5.isChecked() && radio8.isChecked()){
+				TextView textView3 = (TextView) findViewById(R.id.textView3);
+				textView3.setText("Have you ever considered Engineering or Computing?");
+				}
+		break;
+		
+		case R.id.radio1:
+			if (radio1.isChecked() && radio3.isChecked() && radio6.isChecked()){
+				TextView textView3 = (TextView) findViewById(R.id.textView3);
+				textView3.setText("Have you ever considered Software Engineering, Computing or Computing?");
+				}
+			if (radio1.isChecked() && radio3.isChecked() && radio7.isChecked()){
+				TextView textView3 = (TextView) findViewById(R.id.textView3);
+				textView3.setText("Have you ever considered Games Development or Software Engineering?");
+				}
+			if (radio1.isChecked() && radio3.isChecked() && radio8.isChecked()){
+				TextView textView3 = (TextView) findViewById(R.id.textView3);
+				textView3.setText("Have you ever considered Games Development or Mathematics?");
+				}
+			if (radio1.isChecked() && radio4.isChecked() && radio8.isChecked()){
+				TextView textView3 = (TextView) findViewById(R.id.textView3);
+				textView3.setText("Have you ever considered Business Management, Business Information Systems or Computing?");
+				}
+			if (radio1.isChecked() && radio4.isChecked() && radio8.isChecked()){
+				TextView textView3 = (TextView) findViewById(R.id.textView3);
+				textView3.setText("Have you ever considered Festival and Events Management?");
+				}
+			if (radio1.isChecked() && radio4.isChecked() && radio8.isChecked()){
+					TextView textView3 = (TextView) findViewById(R.id.textView3);
+					textView3.setText("Have you ever considered Accounting and Finance?");
+					}
+			if (radio1.isChecked() && radio5.isChecked() && radio8.isChecked()){
+				TextView textView3 = (TextView) findViewById(R.id.textView3);
+				textView3.setText("Have you ever considered Art?");
+				}
+			if (radio1.isChecked() && radio5.isChecked() && radio8.isChecked()){
+				TextView textView3 = (TextView) findViewById(R.id.textView3);
+				textView3.setText("Have you ever considered Drama?");
+				}
+			if (radio1.isChecked() && radio5.isChecked() && radio8.isChecked()){
+					TextView textView3 = (TextView) findViewById(R.id.textView3);
+					textView3.setText("Have you ever considered Music?");
+					}
+		break;
+		
+		case R.id.radio2:
+			if (radio2.isChecked() && radio3.isChecked() && radio6.isChecked()){
+				TextView textView3 = (TextView) findViewById(R.id.textView3);
+				textView3.setText("Have you ever considered English, Politics or Jornalism?");
+				}
+			if (radio2.isChecked() && radio3.isChecked() && radio7.isChecked()){
+				TextView textView3 = (TextView) findViewById(R.id.textView3);
+				textView3.setText("Have you ever considered Business Managment?");
+				}
+			if (radio2.isChecked() && radio3.isChecked() && radio8.isChecked()){
+				TextView textView3 = (TextView) findViewById(R.id.textView3);
+				textView3.setText("Have you ever considered Festival and Events Management?");
+				}
+			if (radio2.isChecked() && radio4.isChecked() && radio6.isChecked()){
+				TextView textView3 = (TextView) findViewById(R.id.textView3);
+				textView3.setText("Have you ever considered Graphic Design?");
+				}
+			if (radio2.isChecked() && radio4.isChecked() && radio7.isChecked()){
+				TextView textView3 = (TextView) findViewById(R.id.textView3);
+				textView3.setText("Have you ever considered Art?");
+				}
+			if (radio2.isChecked() && radio4.isChecked() && radio8.isChecked()){
+				TextView textView3 = (TextView) findViewById(R.id.textView3);
+				textView3.setText("Have you ever considered Music?");
+				}
+			if (radio2.isChecked() && radio5.isChecked() && radio6.isChecked()){
+				TextView textView3 = (TextView) findViewById(R.id.textView3);
+				textView3.setText("Have you ever considered Interactive Media Design?");
+				}
+			if (radio2.isChecked() && radio5.isChecked() && radio7.isChecked()){
+				TextView textView3 = (TextView) findViewById(R.id.textView3);
+				textView3.setText("Have you ever considered Digital Media?");
+				}
+			if (radio2.isChecked() && radio5.isChecked() && radio8.isChecked()){
+				TextView textView3 = (TextView) findViewById(R.id.textView3);
+				textView3.setText("Have you ever considered Acting?");
+				}
+		break;
+		
+		
+		}
+		switch (checkedRadioButtonId1) {
+		case R.id.radio3:
+			if (radio3.isChecked()){
+			}
+		break;
+		
+		case R.id.radio4:
+			if (radio4.isChecked()){
+			}
+		break;
+		
+		case R.id.radio5:
+			if (radio5.isChecked()){
+			}
+		break;
+		
+		}
+		switch (checkedRadioButtonId2) {
+		case R.id.radio6:
+			if (radio6.isChecked()){
+			}
+		break;
+		
+		case R.id.radio7:
+			if (radio7.isChecked()){
+			}
+		break;
+		
+		case R.id.radio8:
+			if (radio8.isChecked()){
+			}
+		break;
+	
+		
+	        }
+	}
+
+}
+

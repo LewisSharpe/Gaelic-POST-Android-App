@@ -1,0 +1,89 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context=".EECI" >
+
+    <Button
+        android:id="@+id/btnSoe"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/btnSoc"
+        android:text="School of Engineering"
+        android:background="#005daa"
+        android:textColor="#FFFFFF" />
+
+    <Button
+        android:id="@+id/btnSoci"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/btnSoe"
+        android:text="School of Creative Industries"
+        android:background="#005daa"
+        android:textColor="#FFFFFF" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/ace_logo" />
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:scaleType="matrix"
+        android:src="@drawable/ednapier" />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/imageView2"
+        android:background="#005daa"
+        android:text="School of Engineering, Computing and Creative Industies"
+        android:textColor="#FFFFFF"
+        android:textSize="24dp"
+        android:gravity="center" />
+
+    <Button
+        android:id="@+id/btnSoc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/textView2"
+        android:background="#005daa"
+        android:text="School of Computing"
+        android:textColor="#FFFFFF" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/textView1"
+        android:src="@drawable/merchiston" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/imageView3"
+        android:background="#FFFFFF"
+        android:text="Merchiston campus brings together both old and new. The Faculty of Engineering, Computing &amp; Creative Industries and our Students&apos; Association call this place home. Located in the lively Bruntsfield area, Merchiston Campus is home to art studios, engineering &amp; design workshops, a computer games lab and a news room &amp; film studios. It&apos;s also where you&apos;ll find the award winning 500-seater Jack Kilby Computing Centre - open 24/7."
+        android:textColor="#005daa"
+        android:textSize="12dp" />
+
+</RelativeLayout>

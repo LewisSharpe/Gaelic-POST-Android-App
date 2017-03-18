@@ -1,0 +1,121 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context=".MainActivity" >
+
+    <ImageView
+        android:id="@+id/imageLogo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:scaleType="matrix"
+        android:src="@drawable/ace_logo" />
+
+    <Button
+        android:id="@+id/btnECCI"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/btnAboutUs"
+        android:text="School of Engineering, Computing and Creative Industries"
+        android:background="#707070"
+        android:textColor="#FFFFFF"  />
+
+    <Button
+        android:id="@+id/btnHLSS"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/btnBusSchool"
+        android:background="#707070"
+        android:text="School of Health Life and Social Sciences"
+        android:textColor="#FFFFFF" />
+
+    <Button
+        android:id="@+id/btnBusSchool"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/btnECCI"
+        android:text="Business School" 
+        android:background="#707070"
+        android:textColor="#FFFFFF"/>
+
+    <ImageView
+        android:id="@+id/twitter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/btnHLSS"
+        android:layout_alignTop="@+id/facebook"
+        android:layout_marginRight="12dp"
+        android:src="@drawable/twitter" />
+
+    <ImageView
+        android:id="@+id/facebook"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/ednapier"
+        android:layout_alignParentLeft="true"
+        android:layout_marginBottom="13dp"
+        android:layout_marginLeft="14dp"
+        android:src="@drawable/facebook" />
+
+    <Button
+        android:id="@+id/btnFindingCourse"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/btnHLSS"
+        android:text="Finding The Right Course for you" 
+        android:background="#707070"
+        android:textColor="#FFFFFF"/>
+
+    <Button
+        android:id="@+id/btnAboutUs"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/imageLogo"
+        android:text="About Us"
+        android:background="#707070"
+        android:textColor="#FFFFFF" />
+
+    <Button
+        android:id="@+id/btnContactUs"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/btnFindingCourse"
+        android:text="Contact us"
+        android:background="#707070"
+        android:textColor="#FFFFFF" />
+
+    <Button
+        android:id="@+id/btnRateApp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/ednapier"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:text="Rate App" 
+        android:background="#FF0000"
+        android:textColor="#FFFFFF" />
+
+    <ImageView
+        android:id="@+id/ednapier"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="12dp"
+        android:src="@drawable/ednapier" />
+
+</RelativeLayout>

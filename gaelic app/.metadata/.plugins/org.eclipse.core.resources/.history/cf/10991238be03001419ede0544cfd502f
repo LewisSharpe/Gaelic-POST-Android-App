@@ -1,0 +1,162 @@
+package com.example.acenapiermobile;
+
+import android.os.Bundle;
+import android.app.Activity;
+import android.content.Intent;
+import android.view.Menu;
+import android.view.View;
+import android.view.View.OnClickListener;
+import android.widget.Button;
+import android.widget.RadioButton;
+import android.widget.RadioGroup;
+import android.widget.TextView;
+import android.widget.Toast;
+
+public class SubjectFinder extends Activity implements OnClickListener {
+	private RadioGroup rgroup1;
+	private RadioButton radio0;
+	private RadioButton radio1;
+	private RadioButton radio2;
+	
+	private RadioGroup rgroup2;
+	private RadioButton radio3;
+	private RadioButton radio4;
+	private RadioButton radio5;
+	
+	private RadioGroup rgroup3;
+	private RadioButton radio6;
+	private RadioButton radio7;
+	private RadioButton radio8;
+	@Override
+	protected void onCreate(Bundle savedInstanceState) {
+		super.onCreate(savedInstanceState);
+		setContentView(R.layout.activity_subject_finder);
+		
+		 Button Next = (Button) findViewById(R.id.btnNext);
+	        Next.setOnClickListener(new OnClickListener()
+	        
+	        {
+	    		public void onClick(View v)
+	    		{
+	    			Intent movetoNext = new Intent(SubjectFinder.this, SubjectFinder2.class); // once clicked on move user to game window
+	    			
+	    			startActivity(movetoNext);
+	    		}
+	        });
+		rgroup1 = (RadioGroup) findViewById (R.id.rgroup1);
+		radio0 = (RadioButton) findViewById (R.id.radio0);
+		radio1 = (RadioButton) findViewById (R.id.radio1);
+		radio2 = (RadioButton) findViewById (R.id.radio2);
+	radio0.setOnClickListener(this);
+	radio1.setOnClickListener(this);
+	radio2.setOnClickListener(this);
+	
+	rgroup2 = (RadioGroup) findViewById (R.id.rgroup2);
+	radio3 = (RadioButton) findViewById (R.id.radio3);
+	radio4 = (RadioButton) findViewById (R.id.radio4);
+	radio5 = (RadioButton) findViewById (R.id.radio5);
+radio3.setOnClickListener(this);
+radio4.setOnClickListener(this);
+radio5.setOnClickListener(this);
+
+
+rgroup3 = (RadioGroup) findViewById (R.id.rgroup3);
+radio6 = (RadioButton) findViewById (R.id.radio6);
+radio7 = (RadioButton) findViewById (R.id.radio7);
+radio8 = (RadioButton) findViewById (R.id.radio8);
+radio6.setOnClickListener(this);
+radio7.setOnClickListener(this);
+radio8.setOnClickListener(this);
+	}
+
+	@Override
+	public boolean onCreateOptionsMenu(Menu menu) {
+		// Inflate the menu; this adds items to the action bar if it is present.
+		getMenuInflater().inflate(R.menu.activity_subject_finder, menu);
+		return true;
+	}
+
+	@Override
+	public void onClick(View v) {
+		int checkedRadioButtonId = rgroup1.getCheckedRadioButtonId();
+		int checkedRadioButtonId1 = rgroup2.getCheckedRadioButtonId();
+		int checkedRadioButtonId2 = rgroup3.getCheckedRadioButtonId();
+		if (radio0.isSelected() && radio3.isSelected() && radio6.isSelected()){
+			Toast toast = Toast.makeText(this, "Suggested: Science and Mathemetics", Toast.LENGTH_SHORT);
+			toast.show();
+		}
+		switch (checkedRadioButtonId) {
+		case R.id.radio0:
+			if (radio0.isChecked()){
+			Toast toast = Toast.makeText(this, "Agree checked", Toast.LENGTH_SHORT);
+			toast.show();
+			}
+		break;
+		
+		case R.id.radio1:
+			if (radio1.isChecked()){
+			Toast toast = Toast.makeText(this, "Neutral checked", Toast.LENGTH_SHORT); 
+			toast.show();
+			}
+		break;
+		
+		case R.id.radio2:
+			if (radio2.isChecked()){
+			Toast toast = Toast.makeText(this, "Disagree checked", Toast.LENGTH_SHORT);
+			toast.show();
+			}
+		break;
+		
+		
+		}
+		switch (checkedRadioButtonId1) {
+		case R.id.radio3:
+			if (radio3.isChecked()){
+			Toast toast = Toast.makeText(this, "Agree checked", Toast.LENGTH_SHORT);
+			toast.show();
+			}
+		break;
+		
+		case R.id.radio4:
+			if (radio4.isChecked()){
+			Toast toast = Toast.makeText(this, "Neutral checked", Toast.LENGTH_SHORT); 
+			toast.show();
+			}
+		break;
+		
+		case R.id.radio5:
+			if (radio5.isChecked()){
+			Toast toast = Toast.makeText(this, "Disagree checked", Toast.LENGTH_SHORT);
+			toast.show();
+			}
+		break;
+		
+		
+		}
+		switch (checkedRadioButtonId2) {
+		case R.id.radio6:
+			if (radio6.isChecked()){
+			Toast toast = Toast.makeText(this, "Agree checked", Toast.LENGTH_SHORT);
+			toast.show();
+			}
+		break;
+		
+		case R.id.radio7:
+			if (radio7.isChecked()){
+			Toast toast = Toast.makeText(this, "Neutral checked", Toast.LENGTH_SHORT); 
+			toast.show();
+			}
+		break;
+		
+		case R.id.radio8:
+			if (radio8.isChecked()){
+			Toast toast = Toast.makeText(this, "Disagree checked", Toast.LENGTH_SHORT);
+			toast.show();
+			}
+		break;
+		
+	        }
+	}
+
+}
+
